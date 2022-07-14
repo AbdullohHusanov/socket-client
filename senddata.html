@@ -6,9 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+  <style>
+    th, td {
+      border:1px solid black;
+    }
+  </style>
 <body>
-    <input type="text" id="inp">
-    <button id="n">bos</button>
+    <table class="table-data">
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td><input type="text" id="company" placeholder="Company"></td>
+          <td><input type="text" id="contact" placeholder="Contact"></td>
+          <td><input type="text" id="country" placeholder="Country"></td>
+        </tr>
+        <!-- <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr> -->
+    </table>
+    <button id="btn">add</button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js"></script>
     <script src="./senddata.js"></script>
